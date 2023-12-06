@@ -1,0 +1,42 @@
+/*ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILOS DEL MENU*/
+.menuBarra{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%; /*Espaciado de la parte superior de la pagina*/
+    left: 50%; /*Espaciado de la parte izquierda de la pagina*/
+    transform: translate(-50%, -50%) scale(4); /*Nos aseguramos que ya esta completamente centrado*/
+    cursor: pointer;
+}
+
+/*ESTILOS ESPECIFICOS DE LOS SPANS DENTRO DEL MENU*/
+.menuBarra span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+    transition: all 600ms;
+    transform-origin: 0px 100%;
+}
+
+/*ESTILOS PARA LAS LINEAS QUE SE LLAMARAN DESDE JS*/
+.fila1Animacion{
+    transform: rotate(45deg)translate(-2px, 1px); /*Al momento de reiniciar la pagina la linea rotara 45 grados y se translada en el eje x y y*/
+}
+
+.fila3Animacion{
+    transform: rotate(-45deg)translate(-4px, 2px);
+}
+
+.fila2Animacion{
+    opacity: 0;
+    margin-left: -35px;
+}
